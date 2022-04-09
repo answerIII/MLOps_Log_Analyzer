@@ -119,16 +119,9 @@ USE_embed = hub.load(
 x_train = join_messages(x_train)
 x_test = join_messages(x_test)
 
-print(f'x_train before: {x_train}')
-print(f'x_train before: {len(x_train)}')
-
 # transform by USE model
-x_train = USE_embed(x_train)
-
-print(f'x_train after: {x_train}')
-print(f'x_train after: {x_train.shape}')
-
-x_test = USE_embed(x_test)
+# x_train = USE_embed(x_train)
+# x_test = USE_embed(x_test)
 
 x_train = np.array(x_train)
 x_test = np.array(x_test)
