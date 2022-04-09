@@ -4,4 +4,4 @@ __pycache__/
 
 *.so
 
-*.DS_Store
+.DS_Store
